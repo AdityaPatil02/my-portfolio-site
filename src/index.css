@@ -1,13 +1,151 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+  /* color: #1f2937; /* Tailwind's gray-800 */
+  /* scroll-behavior: smooth;
+  line-height: 1.6; */
+  /* margin: 0;
+  padding: 0; */
+/* } */ 
+/* index.css or global stylesheet */
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  scroll-margin-top: 96px; /* same as scroll-mt-24 */
+}
+
+
+/* Links */
+a {
+  transition: color 0.3s ease;
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+a:hover {
+  color: #1e40af; /* Tailwind blue-800 */
+}
+
+/* Navbar overrides if you want custom */
+nav {
+  background: white;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+  z-index: 100;
+}
+
+/* Mobile menu animations (optional) */
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms, transform 200ms;
+}
+
+.mobile-menu-exit {
+  opacity: 1;
+}
+
+.mobile-menu-exit-active {
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+/* Typed.js cursor styling */
+.typed-cursor {
+  font-weight: 700;
+  color: #2563eb; /* blue-600 */
+}
+
+/* Custom button styles if you want */
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition;
+}
+
+/* Section container for spacing */
+.section-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  @apply bg-white shadow-md rounded-lg p-4 font-semibold text-blue-600 transition transform hover:scale-105;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  @apply bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between transition transform hover:scale-105;
+}
+
+.project-card h3 {
+  @apply text-xl font-semibold mb-2 text-blue-600;
+}
+
+.project-card p {
+  @apply flex-grow mb-4 text-gray-700;
+}
+
+.project-card span {
+  @apply text-sm text-gray-500 mb-4 block;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  @apply flex-1 bg-blue-600 text-white rounded px-4 py-2 font-semibold text-center transition hover:bg-blue-700;
+}
+
+/* Contact links */
+.contact a {
+  @apply text-blue-600 font-semibold transition hover:text-blue-800;
+}
+
+/* Footer */
+footer {
+  @apply text-center py-6 bg-gray-900 text-white text-sm mt-16;
+}
+
+/* Responsive fixes if needed */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
