@@ -178,7 +178,7 @@ function App() {
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow hover:opacity-90 transition"
       >
-        <img src="/GitHub.png" alt="GitHub" className="w-6 h-6" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" className="w-6 h-6" />
       </a>
 
       <a
@@ -201,7 +201,7 @@ function App() {
   className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow hover:opacity-90 transition"
 >
   <img
-    src="twitter.png" // replace with the actual X logo image path or URL
+    src="https://img.icons8.com/ios-filled/50/x.png" // replace with the actual X logo image path or URL
     alt="X"
     className="w-6 h-6"
   />
@@ -213,11 +213,8 @@ function App() {
   {/* Image Section */}
   <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
     <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-      <img
-        src="/profile.jpg"
-        alt="Aditya Patil"
-        className="w-full h-full object-cover"
-      />
+      <img src="https://i.postimg.cc/Bn7hxtNz/profile.jpg" alt="Aditya Patil" className="w-full h-full object-cover" />
+
     </div>
   </div>
 </section>
