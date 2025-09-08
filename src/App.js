@@ -182,7 +182,7 @@ function App() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/aditya-patil-27a218374/"
+        href="https://www.linkedin.com/in/aditya-patil-60138525a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow hover:opacity-90 transition"
@@ -596,7 +596,7 @@ function App() {
 
       {/* Social Links */}
       <div className="flex space-x-6 justify-start mt-6">
-        <a href="https://www.linkedin.com/in/aditya-patil-27a218374/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/aditya-patil-60138525a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
           <img
             src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
             alt="LinkedIn"
@@ -639,7 +639,7 @@ function App() {
 
     {/* Social Icons */}
     <div className="flex space-x-6">
-      <a href="https://www.linkedin.com/in/aditya-patil-27a218374/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/aditya-patil-60138525a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
         <img
           src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
           alt="LinkedIn"
