@@ -133,12 +133,12 @@ function App() {
   className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-10 text-center md:text-left overflow-visible"
 >
   {/* Text Content */}
-  <div className="md:w-1/2 space-y-6 max-w-xl w-full">
+  <div className="md:w-1/2 space-y-6 max-w-xl w-full mt-10">
     <motion.h1
   initial={{ opacity: 0, y: -50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
-  className="text-3xl sm:text-5xl font-bold mb-2 mt-0 break-words whitespace-normal"
+  className="text-3xl sm:text-5xl font-bold mb-2 mt-0 break-words whitespace-normal mt-5 "
 >
   <span className="block sm:inline">Hi, I'm</span>{" "}
   <span className="block sm:inline">Aditya</span>{" "}
