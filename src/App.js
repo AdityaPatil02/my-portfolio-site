@@ -163,7 +163,7 @@ function App() {
         Contact Me
       </a>
       <a
-        href="https://drive.google.com/uc?export=download&id=19tZ4Wp77X4b1KS_mwaqXJynPmPvLuGsg"
+        href="hhttps://docs.google.com/document/d/1j5GJNtHPLO3BYGWyW5to22LtrZV4g9kq/edit?usp=drive_link&ouid=114724419562914459657&rtpof=true&sd=true"
         download
         className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-200 transition text-center"
       >
